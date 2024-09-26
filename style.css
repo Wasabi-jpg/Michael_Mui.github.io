@@ -2,7 +2,7 @@
 body {
     
     font-family: Arial, sans-serif;
-    background-color: #111111;
+    /* background-color: #111111; */
     margin: 0;
     padding: 0px;
   }
@@ -136,6 +136,9 @@ body {
 /* Footer CSS */
 
 /* All colors for SVG icons are done in the .svg files themselves */
+footer{
+  margin: 10vh;
+}
 footer h4{
   display: flex;
   justify-content: center;
@@ -148,4 +151,45 @@ footer h4{
   width: 5vw;
   height: 5vh;
 
+}
+
+/* Testing new CSS for cards: */
+.pseudoBody{
+  background: linear-gradient(45def, #061de3, #e306ca);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(211,211,211);
+  display: flex;
+  justify-content: center; 
+  align-items: center; /* aligning perpendicularly */
+}
+.container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 350px;
+  height: 500px;
+}
+
+.card_content{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+}
+
+.card_content:hover{
+  cursor: pointer;
+  transform: rotateY(180deg)
+}
+
+.front, .back{
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
+  position: absolute;
+}
+
+.front{
+  background-image: url('https://i.redd.it/zu5c3yc21kbb1.jpg');
 }
